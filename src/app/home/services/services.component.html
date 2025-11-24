@@ -1,0 +1,10 @@
+<section id="services" class="services container">
+  <h2>Our Courses</h2>
+  <div class="cards">
+    <div class="card" *ngFor="let item of content.services">
+      <img [src]="item.icon" alt="" />
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.desc }}</p>
+    </div>
+  </div>
+</section>
